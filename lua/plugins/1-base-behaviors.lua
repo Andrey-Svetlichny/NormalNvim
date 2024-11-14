@@ -539,6 +539,7 @@ return {
   {
     "folke/zen-mode.nvim",
     cmd = "ZenMode",
+    opts = {window = {width = .65}},
   },
 
   --  suda.nvim [write as sudo]
