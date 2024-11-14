@@ -447,6 +447,7 @@ return {
       }
       return {
         defaults = {
+          file_ignore_patterns = { 'node_modules', },
           prompt_prefix = get_icon("PromptPrefix") .. " ",
           selection_caret = get_icon("PromptPrefix") .. " ",
           multi_icon = get_icon("PromptPrefix") .. " ",
