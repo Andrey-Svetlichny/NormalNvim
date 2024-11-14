@@ -449,7 +449,7 @@ return {
           end,
         },
         window = {
-          width = 30,
+          -- width = 30,
           mappings = {
             ["<space>"] = false,
             ["<S-CR>"] = "system_open",
