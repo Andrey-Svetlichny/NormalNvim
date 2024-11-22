@@ -4,7 +4,9 @@
 -- ----------------------------------------
 
 -- Theme
+-- vim.g.default_colorscheme = "astrotheme"
 vim.g.default_colorscheme = "tokyonight-night"
+-- vim.g.default_colorscheme = "carbonfox"
 
 -- Options --------------------------------------------------------------------
 vim.opt.breakindent = true -- Wrap indent to match  line start.

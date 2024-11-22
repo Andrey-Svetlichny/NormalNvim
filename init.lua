@@ -28,9 +28,7 @@ end
 local function load_colorscheme_async(colorscheme)
   vim.defer_fn(function()
     if vim.g.default_colorscheme then
-      if pcall(vim.cmd.colorscheme, colorscheme) then
-        vim.api.nvim_set_hl(0, 'Comment', { fg='#737ca5' })
-      else
+      if not pcall(vim.cmd.colorscheme, colorscheme) then
         require("base.utils").notify(
           "Error setting up colorscheme: " .. colorscheme,
           vim.log.levels.ERROR

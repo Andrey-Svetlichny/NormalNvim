@@ -37,7 +37,22 @@ return {
         comments = { italic = true },
         keywords = { italic = true },
       },
+      on_colors = function(colors)
+        -- tune colors
+        -- :hi Comment guifg=#FFFF00
+        -- :hi Normal guibg=#16161e
+        colors.comment = "#7885bf"
+        colors.bg = "#16161e"
+        colors.bg_dark = "#000000"
+      end
     }
+  },
+
+  {
+    "EdenEast/nightfox.nvim",
+    event = "User LoadColorSchemes",
+    opts = {
+    },
   },
 
   --  astrotheme [theme]
@@ -456,13 +471,13 @@ return {
           layout_config = {
             horizontal = {
               prompt_position = "top",
-              preview_width = 0.50,
+              preview_width = 0.65,
             },
             vertical = {
               mirror = false,
             },
-            width = 0.87,
-            height = 0.80,
+            width = 0.90,
+            height = 0.90,
             preview_cutoff = 120,
           },
           mappings = mappings,
